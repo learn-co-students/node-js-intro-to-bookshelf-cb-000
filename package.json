@@ -10,12 +10,25 @@
     "test": "export NODE_ENV=testing; mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "mocha-multi": "^0.9.0"
+    "mocha": "^2.5.3",
+    "mocha-multi": "^0.9.1"
   },
   "keywords": [
     "node"
   ],
   "author": "Ethan Miller",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bookshelf": "^0.10.4",
+    "chai": "^4.1.2",
+    "expect": "^21.2.1",
+    "express": "^4.16.2",
+    "knex": "^0.13.0",
+    "lodash": "^4.17.4",
+    "start": "^5.1.0",
+    "supertest": "^3.0.0",
+    "test": "^0.6.0",
+    "unexpected": "^10.36.0"
+  }
 }
