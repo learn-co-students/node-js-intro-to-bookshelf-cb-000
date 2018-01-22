@@ -5,28 +5,28 @@ module.exports = {
   testing: {
     client: 'postgresql',
     connection: {
-      database: 'learnco_blog_test'
+      database: 'blogdb'
     },
     pool: {
       min:2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations_test'
     }
   },
 
   development: {
     client: 'postgresql',
     connection: {
-      database: 'learnco_blog',
+      database: 'blogdb',
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations_dev'
     }
   },
 
