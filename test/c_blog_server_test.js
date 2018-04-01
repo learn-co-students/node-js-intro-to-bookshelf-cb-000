@@ -38,19 +38,19 @@ let loginData = {
 
 describe('Server', () => {
 
-  after((done) => {
-    return cleanup().then(() => { 
-      done(); 
-    }).catch(done);
-  });
+  // after((done) => {
+  //   return cleanup().then(() => { 
+  //     done(); 
+  //   }).catch(done);
+  // });
 
   describe('/user endpoint', () => {
 
-    afterEach((done) => {
-      cleanup().then(() => {
-        done();
-      }).catch(done);
-    });
+    // afterEach((done) => {
+    //   cleanup().then(() => {
+    //     done();
+    //   }).catch(done);
+    // });
 
     it('POST to /user with valid data returns new user id', (done) => {
       request(baseUrl)
@@ -108,11 +108,11 @@ describe('Server', () => {
 
   describe('/post endpoint:', () => {
 
-    afterEach((done) => {
-      cleanup().then(() => {
-        done();
-      }).catch(done);
-    });
+    // afterEach((done) => {
+    //   cleanup().then(() => {
+    //     done();
+    //   }).catch(done);
+    // });
 
     it('POST to /post with post data returns new post id', (done) => {
       blog.User.forge().save(mockUser).then((usr) => {
@@ -184,11 +184,11 @@ describe('Server', () => {
 
   describe('/posts endpt', () => {
 
-    afterEach((done) => {
-      return cleanup().then(() => {
-        done();
-      }).catch(done);
-    });
+    // afterEach((done) => {
+    //   return cleanup().then(() => {
+    //     done();
+    //   }).catch(done);
+    // });
 
     it('GET to /posts returns a list of all the posts', (done) => {
       blog.User.forge().save(mockUser).then((usr) => {
@@ -211,11 +211,11 @@ describe('Server', () => {
 
   describe('/comment endpt', () => {
 
-    afterEach((done) => {
-      return cleanup().then(() => {
-        done();
-      }).catch(done);
-    });
+    // afterEach((done) => {
+    //   return cleanup().then(() => {
+    //     done();
+    //   }).catch(done);
+    // });
 
     it('POST to /comment with valid data returns new comment id', (done) => {
       let testUserId;
