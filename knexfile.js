@@ -8,7 +8,7 @@ module.exports = {
       database: 'learnco_blog_test'
     },
     pool: {
-      min:2,
+      min: 2,
       max: 10
     },
     migrations: {
